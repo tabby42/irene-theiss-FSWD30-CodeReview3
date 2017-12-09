@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Car Insurance</title>
+	<link rel="stylesheet" href="css/normalize.css">
+	<link href="https://fonts.googleapis.com/css?family=Nunito:400,400i,700,900" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" href="css/style.css">
+</head>
+<body class="flex-column">
+	<header class="flex-row"> 
+		<a href="index.html"> 
+			<span><i class="fa fa-car" aria-hidden="true"></i><strong class="bold">Car</strong> Insurance</span>
+		</a>
+	</header><!-- /header -->
+	<main >
+		<div class="img-container flex-row flex-wrap">
+			<h1 class="fullwidth">Calculate your <strong class="bold">rate</strong></h1>
+			<div class="fullwidth flex-row j-center">
+				<form accept-charset="utf-8">
+					<label>Name<br><input type="text" name="name" value=""></label>
+					<label>Age of car<br><input type="number" name="age" value=""></label>
+					<label for="country">Country<br>
+					<select name="country">
+						<option value="austria">Austria</option>
+						<option value="germany">Germany</option>
+						<option value="italy">Italy</option>
+					</select></label>
+					<label>Horsepower<br><input type="number" name="horsepower" value=""></label>
+					<button type="button" class="btn">Calculate</button>
+				</form>
+			</div>
+		</div>
+		<div class="info-container">
+			<!-- <a href="quote.html" class="btn">Calculate now!</a> -->
+		</div>
+	</main><!-- /main -->
+	<footer>
+	</footer><!-- /footer -->
+	<script src="js/script.js" type="text/javascript" charset="utf-8"></script>
+</body>
+</html>
