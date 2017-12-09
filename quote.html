@@ -20,21 +20,21 @@
 		<div class="img-container flex-row flex-wrap">
 			<h1 class="fullwidth">Calculate your <strong class="bold">rate</strong></h1>
 			<div class="fullwidth flex-row j-center">
-				<form accept-charset="utf-8">
-					<label>Name<br><input type="text" name="name" value=""></label>
-					<label>Age of car<br><input type="number" name="age" value=""></label>
+				<form accept-charset="utf-8" onsubmit="return false;">
+					<label>Name<br><input type="text" name="name" value="" required></label>
+					<label>Age of car<br><input type="number" name="age" value="" required></label>
 					<label for="country">Country<br>
-					<select name="country">
+					<select name="country" required>
 						<option value="austria">Austria</option>
 						<option value="germany">Germany</option>
 						<option value="italy">Italy</option>
 					</select></label>
-					<label>Horsepower<br><input type="number" name="horsepower" value=""></label>
-					<button type="button" class="btn">Calculate</button>
+					<label>Horsepower<br><input type="number" name="horsepower" value="" required></label>
+					<button type="submit" class="btn" id="submit">Calculate</button>
 				</form>
 			</div>
 		</div>
-		<div class="info-container">
+		<div class="info-container" id="msg">
 			<!-- <a href="quote.html" class="btn">Calculate now!</a> -->
 		</div>
 	</main><!-- /main -->
