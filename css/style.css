@@ -6,6 +6,15 @@
   font-weight: 700; }
 
 /*Colors*/
+.orange {
+  color: #E58047; }
+
+.blue {
+  background-color: #2E4452; }
+
+.white {
+  color: #fff; }
+
 /*Flexbox rules*/
 .flex-column {
   display: -webkit-box;
@@ -30,6 +39,11 @@
   -webkit-box-flex: 1;
   -ms-flex: 1 0 28%;
   flex: 1 0 28%; }
+  @media screen and (max-width: 690px) {
+    .flex-1 {
+      -webkit-box-flex: 1;
+      -ms-flex: 1 0 90%;
+      flex: 1 0 90%; } }
 
 .flex-wrap {
   -ms-flex-wrap: wrap;
@@ -72,6 +86,8 @@ header {
     line-height: 0.8; }
     header span .fa {
       margin-right: 12px; }
+  header a {
+    text-align: center; }
 
 main {
   -webkit-box-flex: 1;
@@ -81,13 +97,14 @@ main {
 form .btn {
   font-family: "Nunito", sans-serif;
   width: 287px;
-  margin-top: 25px; }
+  margin-top: 25px;
+  line-height: 1; }
 form label {
   width: 100%;
   display: block;
   text-align: left;
   padding: 5px  0;
-  color: #2E4452;
+  color: #fff;
   font-size: 16.8px;
   line-height: 1.5;
   font-weight: 700; }
@@ -141,8 +158,11 @@ h1 {
 .info-container {
   margin: 0 auto;
   padding: 50px 10%;
+  color: #2E4452;
   background-color: #F4F4F4;
-  text-align: center; }
+  text-align: center;
+  font-size: 25.2px;
+  font-weight: 700; }
 
 .btn {
   text-decoration: none;
@@ -160,7 +180,7 @@ h1 {
   transition: all 0.5s ease;
   cursor: pointer; }
   .btn:hover, .btn:focus {
-    background-color: #2E4452; }
+    background-color: #3AA28D; }
 
 footer {
   background-color: #2E4452;

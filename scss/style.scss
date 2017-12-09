@@ -15,6 +15,15 @@ $teal: #3AA28D;
 $blue: #2E4452;
 $lightgray: #F4F4F4;
 $white: #fff;
+.orange {
+	color: $orange;
+}
+.blue {
+	background-color: $blue;
+}
+.white {
+	color: $white;
+}
 
 /*Flexbox rules*/
 .flex-column {
@@ -42,6 +51,11 @@ $white: #fff;
     -webkit-box-flex: 1;
         -ms-flex: 1 0 28%;
             flex: 1 0 28%;
+    @media screen and (max-width: 690px) {
+        -webkit-box-flex: 1;
+            -ms-flex: 1 0 90%;
+                flex: 1 0 90%;
+    }
 }
 
 .flex-wrap {
@@ -92,6 +106,9 @@ header {
 		    margin-right: 12px;
     	}
     }
+    a {
+	    text-align: center;
+    }
 }
 
 main {
@@ -107,13 +124,14 @@ form {
 		font-family: $font-fam;
 		width: 287px;
 		margin-top: 25px;
+	    line-height: 1;
 	}
 	label {
 	    width: 100%;
 	    display: block;
 	    text-align: left;
 	    padding: 5px  0;
-	    color: $blue;
+	    color: $white;
 	    font-size: ($base-font-size * 1.2);
 	    line-height: 1.5;
 	    font-weight: 700;
@@ -179,8 +197,11 @@ h1 {
 .info-container {
     margin: 0 auto;
     padding: 50px 10%;
+    color: $blue;
 	background-color: $lightgray;
 	text-align: center;
+	font-size: ($base-font-size * 1.8);
+    font-weight: 700;
 }
 
 .btn {
@@ -199,7 +220,7 @@ h1 {
     transition: all 0.5s ease;
     cursor: pointer;
     &:hover, &:focus {
-    	background-color: $blue;
+    	background-color: $teal;
     }
 }
 
