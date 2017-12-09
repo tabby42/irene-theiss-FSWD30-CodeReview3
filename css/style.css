@@ -5,6 +5,7 @@
 .bold {
   font-weight: 700; }
 
+/*Colors*/
 /*Flexbox rules*/
 .flex-column {
   display: -webkit-box;
@@ -27,22 +28,143 @@
 
 .flex-1 {
   -webkit-box-flex: 1;
-  -ms-flex: 1;
-  flex: 1; }
+  -ms-flex: 1 0 28%;
+  flex: 1 0 28%; }
+
+.flex-wrap {
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap; }
+
+.fullwidth {
+  -webkit-box-flex: 1;
+  -ms-flex: 1 0 100%;
+  flex: 1 0 100%;
+  text-align: center; }
+
+.j-center {
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center; }
+
+/*Layout Elements*/
+body {
+  font-family: "Nunito", sans-serif;
+  font-size: 14px;
+  color: #7B7575;
+  background-color: #3AA28D; }
+
+a {
+  text-decoration: none; }
+
+header {
+  background-color: #F4F4F4;
+  padding: 30px 10%;
+  font-size: 35px;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center; }
+  header span {
+    color: #E58047;
+    text-align: center;
+    line-height: 0.8; }
+    header span .fa {
+      margin-right: 12px; }
 
 main {
-  width: 80%;
-  margin: 0 auto;
-  padding: 50px 0;
   -webkit-box-flex: 1;
   -ms-flex: 1;
   flex: 1; }
+
+form .btn {
+  font-family: "Nunito", sans-serif;
+  width: 287px;
+  margin-top: 25px; }
+form label {
+  width: 100%;
+  display: block;
+  text-align: left;
+  padding: 5px  0;
+  color: #2E4452;
+  font-size: 16.8px;
+  line-height: 1.5;
+  font-weight: 700; }
+form input,
+form select {
+  width: 280px;
+  height: 40px;
+  background-color: #fff;
+  font-family: "Nunito", sans-serif;
+  border-radius: 7px;
+  color: #2E4452; }
+form input {
+  border: 0;
+  outline: none;
+  padding-left: 7px; }
+form select {
+  border: 0;
+  width: 287px;
+  outline: 0; }
+
+h1 {
+  font-size: 35px;
+  color: #2E4452;
+  text-align: center;
+  margin: 0;
+  margin-bottom: 20px;
+  font-weight: 400; }
+
+.img-container {
+  width: 80%;
+  margin: 0 auto;
+  padding: 50px 0; }
+  .img-container figure {
+    margin: 10px; }
+    .img-container figure figcaption {
+      text-align: center;
+      color: #fff;
+      font-size: 16.8px;
+      line-height: 1.1;
+      padding: 10px 5px; }
+      .img-container figure figcaption .fa {
+        font-size: 14px; }
+      .img-container figure figcaption p {
+        margin: 7px; }
+  .img-container img {
+    max-width: 100%; }
   @media screen and (max-width: 480px) {
-    main {
+    .img-container {
       width: 90%; } }
 
+.info-container {
+  margin: 0 auto;
+  padding: 50px 10%;
+  background-color: #F4F4F4;
+  text-align: center; }
+
+.btn {
+  text-decoration: none;
+  color: #fff;
+  font-weight: 700;
+  font-size: 21px;
+  padding: 10px 20px;
+  background: #E58047;
+  border-radius: 10px;
+  border: 0;
+  outline: 0;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+  cursor: pointer; }
+  .btn:hover, .btn:focus {
+    background-color: #2E4452; }
+
 footer {
-  height: 40px;
+  background-color: #2E4452;
+  height: 60px;
   margin-top: 0; }
 
 /*# sourceMappingURL=style.css.map */
