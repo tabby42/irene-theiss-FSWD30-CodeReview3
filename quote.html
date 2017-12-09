@@ -10,7 +10,7 @@
 	<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 	<link rel="stylesheet" href="css/style.css">
 </head>
-<body class="flex-column">
+<body class="flex-column blue">
 	<header class="flex-row"> 
 		<a href="index.html"> 
 			<span><i class="fa fa-car" aria-hidden="true"></i><strong class="bold">Car</strong> Insurance</span>
@@ -18,19 +18,22 @@
 	</header><!-- /header -->
 	<main >
 		<div class="img-container flex-row flex-wrap">
-			<h1 class="fullwidth">Calculate your <strong class="bold">rate</strong></h1>
+			<h1 class="fullwidth white">Calculate your <strong class="bold">rate</strong></h1>
 			<div class="fullwidth flex-row j-center">
 				<form accept-charset="utf-8" onsubmit="return false;">
-					<label>Name<br><input type="text" name="name" value="" required></label>
-					<label>Age of car<br><input type="number" name="age" value="" required></label>
+					<label>Name *<br>
+						<input type="text" name="fullname" value="" id="full"  required>
+					</label>
+					<label>Age of car *<br><input type="number" name="age" value="" required></label>
 					<label for="country">Country<br>
 					<select name="country" required>
 						<option value="austria">Austria</option>
 						<option value="germany">Germany</option>
 						<option value="italy">Italy</option>
 					</select></label>
-					<label>Horsepower<br><input type="number" name="horsepower" value="" required></label>
-					<button type="submit" class="btn" id="submit">Calculate</button>
+					<label>Horsepower *<br><input type="number" name="horsepower" value="" required></label>
+					<!-- <button type="submit" class="btn" id="submit">Calculate</button> -->
+					<input type="submit" name="" class="btn" id="submit" value="Calculate">
 				</form>
 			</div>
 		</div>
