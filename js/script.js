@@ -19,14 +19,19 @@ function checkInput () {
 function showResult () {
 	var rate = calculateInsurance().toFixed(2);
 	var user = fname.value;
+	var message;
 	if (checkInput() && !isNaN(rate) && rate > 0) {
-		document.getElementById("msg").innerHTML = 
-		"Hi, " + user + " from " + country.options[country.selectedIndex].text 
+		message =  "Hi, " + user + " from " + country.options[country.selectedIndex].text 
 		+ "!<br>Your rate would be <span class='orange'>€ " + rate + "</span>";
+		printMessage("msg", message);
 	} else {
-		document.getElementById("msg").innerHTML = 
-		"Please fill out all the form fields correctly.";
+		message = "Please fill out all the form fields correctly.";
+		printMessage("msg", message);
 	}
+}
+
+function printMessage (id, message) {
+	document.getElementById(id).innerHTML = message;
 }
 
 if (document.getElementById("submit")) {
